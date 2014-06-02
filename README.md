@@ -4,11 +4,11 @@ HZipper
 Compresses and Decompresses text files using Huffman coding.
 
 A zipped file has this format:
-	- 2 byte int x == # of bytes used by code tree (1byte could theoretically be too small).
-	- x bytes storing preorder traversal of decoding tree
-	- 1 byte int r == number of bits used in the file's last byte (the rest of its bits will be 0).
-	    - r < 8 so it only really needs 3 bits but I'm using a byte for simplicity.
-	- n bytes storing a message of 8(n-1) + r bits
+- 2 byte int x == # of bytes used by code tree (1byte could theoretically be too small).
+- x bytes storing preorder traversal of decoding tree
+- 1 byte int r == number of bits used in the file's last byte (the rest of its bits will be 0).
+    - r < 8 so it only really needs 3 bits but I'm using a byte for simplicity.
+- n bytes storing a message of 8(n-1) + r bits
 
 Achieves a compression ratio of ~30-40%, although this is highly dependent on the language and document size. 
 
