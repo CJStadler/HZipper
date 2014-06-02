@@ -1,6 +1,10 @@
 HZipper
 =======
 
+Chris Stadler
+Written for cs106 at Haverford College with Marco Alvarez.
+-------------
+
 Compresses and Decompresses text files using Huffman coding.
 
 A zipped file has this format:
@@ -12,7 +16,6 @@ A zipped file has this format:
 
 Achieves a compression ratio of ~30-40%, although this is highly dependent on the language and document size. 
 
-Written for cs106 at Haverford College with Marco Alvarez.
 
 
 hzipper.py command line interface:
