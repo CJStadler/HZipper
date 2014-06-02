@@ -2,8 +2,9 @@ HZipper
 =======
 
 Chris Stadler
-Written for cs106 at Haverford College with Marco Alvarez.
 -------------
+
+Written for cs106 at Haverford College with Marco Alvarez.
 
 Compresses and Decompresses text files using Huffman coding.
 
