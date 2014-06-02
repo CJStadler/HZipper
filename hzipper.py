@@ -274,8 +274,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Zip and unzip using Huffman coding")
     parser.add_argument('--compress', '-c', help='File to compress')
     parser.add_argument('--decompress', '-d', help='File to decompress')
-    parser.add_argument('--url_compress', '-u', help='URL to decompress')
-    parser.add_argument('--output', '-o', help='Name of file to write')
+    parser.add_argument('--url_compress', '-u', help='URL to compress')
+    parser.add_argument('output', help='Name of file to write')
     args = parser.parse_args()
     if args.compress:
         hzip(args.compress,args.output)
